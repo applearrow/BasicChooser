@@ -1,0 +1,3 @@
+include ':MyLibrary'
+include ':app'
+rootProject.name = "LibTemplate"

@@ -1,3 +1,3 @@
-include ':MyLibrary'
+include ':BasicChooser'
 include ':app'
-rootProject.name = "LibTemplate"
+rootProject.name = "BasicChooser"

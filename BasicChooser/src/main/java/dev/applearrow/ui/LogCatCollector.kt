@@ -1,4 +1,4 @@
-package dev.applearrow.mylibrary
+package dev.applearrow.ui
 
 import android.graphics.Color
 import android.text.SpannableStringBuilder

@@ -1,23 +1,23 @@
 package dev.applearrow.sample
 
-import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
-import dev.applearrow.sample.databinding.ActivityMainBinding
-import timber.log.Timber
+import android.content.Intent
+import dev.applearrow.ui.BaseEntryChoiceActivity
+import dev.applearrow.ui.Choice
 
-private lateinit var binding: ActivityMainBinding
+class MainActivity : BaseEntryChoiceActivity() {
 
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        val view = binding.root
-        setContentView(view)
-    }
-
-    override fun onStart() {
-        super.onStart()
-        Timber.d("Hello world")
-        binding.textView.text = "Hello world"
+    override fun getChoices(): List<Choice> {
+        return kotlin.collections.listOf(
+            Choice(
+                "Choice 1",
+                "Placeholder for demo 1",
+                Intent(this, ChoiceActivity1::class.java)
+            ),
+            Choice(
+                "Choice 2",
+                "Placeholder for demo 2",
+                Intent(this, ChoiceActivity2::class.java)
+            )
+        )
     }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest package="dev.applearrow.sample">
+<manifest package="dev.applearrow.ui">
 
     <application />
 </manifest>

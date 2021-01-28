@@ -3,14 +3,16 @@
     package="dev.applearrow.sample">
 
     <application
-        android:name="dev.applearrow.sample.SampleApplication"
+        android:name=".SampleApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.CollectLogCatSample">
-        <activity android:name="dev.applearrow.sample.MainActivity">
+        android:theme="@style/Theme.BasicChooserSample">
+        <activity android:name=".ChoiceActivity2" />
+        <activity android:name=".ChoiceActivity1" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
